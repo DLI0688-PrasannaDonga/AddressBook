@@ -1,6 +1,6 @@
 public class Contacts {
     String firstName;
-    String LastName;
+    String lastName;
     String address;
     String city;
     String state;
