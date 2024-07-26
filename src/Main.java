@@ -81,5 +81,20 @@ public class Main {
 
         System.out.println("After changes here is the Employee Details");
         con.displayDetails();
+
+
+        System.out.println("If you wanna delete person details if yes enter 'Y' else enter 'N");
+        String choice =sc.nextLine();
+        if(choice.equals("y")||choice.equals("Y")||choice.equals("Yes")||choice.equals("yes") ) {
+            System.out.println("Enter the person Firstname you wanna delete");
+            String delName = sc.nextLine();
+            if (delName.equals(con.firstName)) {
+                con = null;
+                System.out.println("person details deleted successfully");
+
+            } else {
+                System.out.println("person is not found");
+            }
+        }
     }
 }
